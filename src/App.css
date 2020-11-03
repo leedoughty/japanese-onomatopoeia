@@ -1,4 +1,25 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: rgb(200, 200, 200);
+}
+
+.nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
 }
