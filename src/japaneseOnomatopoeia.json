@@ -1,0 +1,46 @@
+[
+  {
+    "id": "dokidoki",
+    "word": "ドキドキ",
+    "meaning": "Heartbeat",
+    "sentences": [
+      {
+        "sentence": "心がドキドキする",
+        "sentenceMeaning": "My heart is beating"
+      }
+    ]
+  },
+  {
+    "id": "kurukuru",
+    "word": "くるくる",
+    "meaning": "Spinning, revolving",
+    "sentences": [
+      {
+        "sentence": "木の葉が庭でくるくると舞っていた",
+        "sentenceMeaning": "The leaves whirled in the yard."
+      }
+    ]
+  },
+  {
+    "id": "gurarigurari",
+    "word": "ぐらりぐらり",
+    "meaning": "Shaking strongly",
+    "sentences": [
+      {
+        "sentence": "小船はあらしの中でぐらりぐらりと揺れた",
+        "sentenceMeaning": "The boat lurched about in the storm"
+      }
+    ]
+  },
+  {
+    "id": "fuwafuwa",
+    "word": "ふわふわ",
+    "meaning": "Floating, fluffy, light",
+    "sentences": [
+      {
+        "sentence": "デザートにはふわふわのスフレを食べた",
+        "sentenceMeaning": "I enjoyed a light souffle for dessert"
+      }
+    ]
+  }
+]
