@@ -3,6 +3,7 @@ import NavBar from "./NavBar";
 import About from "./About";
 import Contact from "./Contact";
 import Homepage from "./Homepage";
+import WordPage from "./WordPage";
 import "./App.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route exact path="/" component={Homepage} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          <Route path="/word/:id" component={WordPage} />
         </Switch>
       </div>
     </Router>
