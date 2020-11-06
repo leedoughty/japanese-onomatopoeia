@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import "../App.css";
 
-function Gurarigurari() {
+function Kurukuru() {
   const Spin = keyframes`
     0% {
       transform: rotateY(0deg);
@@ -22,4 +22,4 @@ function Gurarigurari() {
   );
 }
 
-export default Gurarigurari;
+export default Kurukuru;
