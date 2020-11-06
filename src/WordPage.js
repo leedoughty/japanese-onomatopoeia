@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import japaneseOnomatopoeia from "./japaneseOnomatopoeia.json";
+import * as WordAnimations from "./word-animations";
 import "./App.css";
 
 function WordPage({ match }) {
@@ -14,6 +15,15 @@ function WordPage({ match }) {
     setItem(item);
   };
 
+  const WordAnimationComponents = {
+    dokidoki: WordAnimations.Dokidoki,
+    fuwafuwa: WordAnimations.Fuwafuwa,
+    gurarigurari: WordAnimations.Gurarigurari,
+    kurukuru: WordAnimations.Kurukuru,
+  };
+
+  const WordAnimation = WordAnimationComponents[match.params.id];
+
   return (
     <div>
       {item.map((word) => {
@@ -24,6 +34,7 @@ function WordPage({ match }) {
               <p>{word.word}</p>
               <p>{word.meaning}</p>
               <p>{word.sentences[0].sentence}</p>
+              <WordAnimation />
             </>
           );
         }
