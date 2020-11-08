@@ -34,6 +34,7 @@ function WordPage({ match }) {
               <p>{word.word}</p>
               <p>{word.meaning}</p>
               <p>{word.sentences[0].sentence}</p>
+              <p>{word.sentences[0].sentenceMeaning}</p>
               <WordAnimation />
             </>
           );
