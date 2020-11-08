@@ -11,6 +11,9 @@ function Fuwafuwa() {
   const FloatingAnimation = styled.p`
     animation: ${Floating} 1.5s linear infinite;
     font-size: 80px;
+    @media (prefers-reduced-motion: reduce) {
+      animation: ${Floating} 0.5s ease-in infinite;
+    }
   `;
 
   return (
