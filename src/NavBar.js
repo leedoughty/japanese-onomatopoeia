@@ -4,17 +4,12 @@ import "./App.css";
 function NavBar() {
   return (
     <nav>
-      <Link to="/">
-        <h1>Japanese Onomatopoeia</h1>
+      <Link className="nav-link" to="/">
+        <h1>onomato</h1>
       </Link>
-      <ul className="nav-links">
-        <Link to="/about">
-          <li>About</li>
-        </Link>
-        <Link to="/contact">
-          <li>Contact</li>
-        </Link>
-      </ul>
+      <Link className="nav-link" to="/about">
+        <h1>about</h1>
+      </Link>
     </nav>
   );
 }

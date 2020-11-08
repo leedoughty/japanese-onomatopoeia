@@ -12,14 +12,16 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 10vh;
-  background: rgb(200, 200, 200);
+  height: 10vh;
+  background-color: #2f2f2f;
 }
 
-.nav-links {
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
+.nav-link {
+  color: #fdfdfd;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
 }
