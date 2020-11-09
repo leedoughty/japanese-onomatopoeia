@@ -4,7 +4,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Homepage from "./Homepage";
 import WordPage from "./WordPage";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (

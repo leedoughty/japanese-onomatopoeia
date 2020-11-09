@@ -1,5 +1,4 @@
 import styled, { keyframes } from "styled-components";
-import "../App.css";
 
 function Kurukuru() {
   const Spin = keyframes`

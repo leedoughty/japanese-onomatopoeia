@@ -3,7 +3,6 @@ import japaneseOnomatopoeia from "./japaneseOnomatopoeia.json";
 import * as WordAnimations from "./word-animations";
 import Word from "./Word";
 import Sentence from "./Sentence";
-import "./App.css";
 
 function WordPage({ match }) {
   useEffect(() => {

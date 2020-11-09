@@ -1,5 +1,4 @@
 import styled, { keyframes } from "styled-components";
-import "../App.css";
 
 function Gurarigurari() {
   const Shaking = keyframes`
