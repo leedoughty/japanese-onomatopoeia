@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import japaneseOnomatopoeia from "./japaneseOnomatopoeia.json";
 import * as WordAnimations from "./word-animations";
+import Word from "./Word";
+import Sentence from "./Sentence";
 import "./App.css";
 
 function WordPage({ match }) {
@@ -30,12 +32,12 @@ function WordPage({ match }) {
         if (word.id === match.params.id) {
           return (
             <>
-              <h1>{word.id}</h1>
-              <p>{word.word}</p>
-              <p>{word.meaning}</p>
-              <p>{word.sentences[0].sentence}</p>
-              <p>{word.sentences[0].sentenceMeaning}</p>
+              <Word id={word.id} word={word.word} meaning={word.meaning} />
               <WordAnimation />
+              <Sentence
+                sentence={word.sentences[0].sentence}
+                sentenceMeaning={word.sentences[0].sentenceMeaning}
+              />
             </>
           );
         }
