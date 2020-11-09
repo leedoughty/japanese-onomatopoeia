@@ -3,10 +3,10 @@ import React from "react";
 function Word({ id, word, meaning }) {
   return (
     <section>
-      <span>{id}</span>
-      <span>{word}</span>
+      <span className="japanese-word">{word}</span>
+      <span className="romaji-word">{id}</span>
       <br />
-      <span>{meaning}</span>
+      <span className="english-word">{meaning}</span>
     </section>
   );
 }

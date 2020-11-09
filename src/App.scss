@@ -2,6 +2,8 @@ $black: #2f2f2f;
 $white: #fdfdfd;
 $grey: rgb(180, 180, 180);
 
+$font-size-medium: 1.5em;
+
 body {
   margin: 0;
   padding: 0;
@@ -17,14 +19,46 @@ nav {
   align-items: center;
   height: 10vh;
   background-color: $black;
+
+  .nav-link {
+    color: $white;
+    font-size: 20px;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
-.nav-link {
-  color: $white;
-  font-size: 20px;
-  text-decoration: none;
-}
+.word-page {
+  padding-top: 10px;
+  width: 90vw;
+  margin: auto;
 
-.nav-link:hover {
-  text-decoration: underline;
+  .japanese-word {
+    font-weight: 600;
+    font-size: $font-size-medium;
+  }
+
+  .romaji-word {
+    color: $grey;
+    font-size: 1.5em;
+    font-style: italic;
+    padding-left: 10px;
+  }
+
+  .english-word {
+    font-size: $font-size-medium;
+  }
+
+  .japanese-sentence {
+    margin: 0;
+    font-weight: 600;
+    font-size: $font-size-medium;
+  }
+
+  .english-sentence {
+    margin: 0;
+    font-size: $font-size-medium;
+  }
 }

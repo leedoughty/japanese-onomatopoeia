@@ -26,7 +26,7 @@ function WordPage({ match }) {
   const WordAnimation = WordAnimationComponents[match.params.id];
 
   return (
-    <div>
+    <section className="word-page">
       {item.map((word) => {
         if (word.id === match.params.id) {
           return (
@@ -41,7 +41,7 @@ function WordPage({ match }) {
           );
         }
       })}
-    </div>
+    </section>
   );
 }
 
