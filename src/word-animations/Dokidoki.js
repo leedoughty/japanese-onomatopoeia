@@ -14,14 +14,27 @@ function Dokidoki() {
   `;
 
   const HeartbeatAnimation = styled.p`
+    text-align: center;
     animation: ${Heartbeat} 0.4s ease infinite;
-    font-size: 80px;
+    font-size: 50px;
+    color: white;
+  `;
+
+  const DokidokiContainer = styled.div`
+    margin: 10px 0 10px 0;
+    border: 1px solid red;
+    background-color: #e74c3c;
+    width: 90vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   `;
 
   return (
-    <div>
+    <DokidokiContainer>
       <HeartbeatAnimation>ドキドキ</HeartbeatAnimation>
-    </div>
+    </DokidokiContainer>
   );
 }
 
