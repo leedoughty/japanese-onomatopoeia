@@ -15,13 +15,15 @@ function Homepage() {
   };
 
   return (
-    <div>
+    <ul className="homepage-links">
       {items.map((item) => (
-        <h1 key={item.id}>
-          <Link to={`word/${item.id}`}>{item.id}</Link>
-        </h1>
+        <li className="homepage-item" key={item.id}>
+          <Link className="homepage-link" to={`word/${item.id}`}>
+            {item.word} – {item.meaning}
+          </Link>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
 
