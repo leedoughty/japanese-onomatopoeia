@@ -90,3 +90,12 @@ nav {
     font-size: $font-size-medium;
   }
 }
+
+.about-container {
+  width: 90vw;
+  margin: auto;
+
+  .about-text {
+    font-size: $font-size-medium;
+  }
+}
