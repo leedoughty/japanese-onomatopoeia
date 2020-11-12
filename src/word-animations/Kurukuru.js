@@ -11,13 +11,25 @@ function Kurukuru() {
   `;
 
   const SpinningAnimation = styled.p`
-    font-size: 100px;
+    font-size: 80px;
     animation: ${Spin} 1s linear infinite;
+    color: #fdfdfd;
   `;
+
+  const KurukuruContainer = styled.div`
+    margin: 10px 0 10px 0;
+    background-color: #2f2f2f;
+    width: 90vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  `;
+
   return (
-    <div>
+    <KurukuruContainer>
       <SpinningAnimation>くるくる</SpinningAnimation>
-    </div>
+    </KurukuruContainer>
   );
 }
 
