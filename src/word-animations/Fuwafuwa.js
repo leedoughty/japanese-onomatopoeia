@@ -15,10 +15,19 @@ function Fuwafuwa() {
     }
   `;
 
+  const FuwafuwaContainer = styled.div`
+    margin: 10px 0 10px 0;
+    width: 90vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  `;
+
   return (
-    <div>
+    <FuwafuwaContainer>
       <FloatingAnimation>ふわふわ</FloatingAnimation>
-    </div>
+    </FuwafuwaContainer>
   );
 }
 
