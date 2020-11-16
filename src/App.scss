@@ -79,6 +79,12 @@ nav {
     font-size: $font-size-medium;
   }
 
+  .sentences-heading {
+    font-weight: 200;
+    font-size: $font-size-medium;
+    text-decoration: underline;
+  }
+
   .japanese-sentence {
     margin: 0;
     font-weight: 600;

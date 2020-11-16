@@ -33,6 +33,7 @@ function WordPage({ match }) {
             <>
               <Word id={word.id} word={word.word} meaning={word.meaning} />
               <WordAnimation />
+              <h2 className="sentences-heading">Sentences</h2>
               <Sentence
                 sentence={word.sentences[0].sentence}
                 sentenceMeaning={word.sentences[0].sentenceMeaning}
