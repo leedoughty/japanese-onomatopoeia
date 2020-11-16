@@ -2,7 +2,7 @@ function About() {
   return (
     <div className="about-container">
       <p className="about-text">
-        Onomatopoeia words are use to represent sounds in a language. In
+        Onomatopoeia words are used to represent sounds in a language. In
         Japanese, onomatopoeia play an important role in expressing sound,
         emotion, movement, feelings, states and much more, and are frequently
         used in everyday speech and writing.
