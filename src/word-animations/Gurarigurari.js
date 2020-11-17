@@ -22,6 +22,9 @@ function Gurarigurari() {
     @media (prefers-reduced-motion: reduce) {
       animation: ${Shaking} 3s linear infinite;
     }
+    @media (max-width: 768px) {
+      font-size: 40px;
+    }
   `;
 
   const GurarigurariContainer = styled.div`
