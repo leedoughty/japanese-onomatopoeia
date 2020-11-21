@@ -21,6 +21,7 @@ function WordPage({ match }) {
     fuwafuwa: WordAnimations.Fuwafuwa,
     gurarigurari: WordAnimations.Gurarigurari,
     kurukuru: WordAnimations.Kurukuru,
+    barabara: WordAnimations.Barabara,
   };
 
   const WordAnimation = WordAnimationComponents[match.params.id];

@@ -42,5 +42,16 @@
         "sentenceMeaning": "I enjoyed a light souffle for dessert"
       }
     ]
+  },
+  {
+    "id": "barabara",
+    "word": "バラバラ",
+    "meaning": "Scattered, in disarray",
+    "sentences": [
+      {
+        "sentence": "強い風のせい、花びらはバラバラになりました",
+        "sentenceMeaning": "The strong wind caused the petals to be scattered"
+      }
+    ]
   }
 ]
