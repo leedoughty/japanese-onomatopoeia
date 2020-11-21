@@ -20,19 +20,21 @@ function Barabara() {
     position: absolute;
     font-size: 100px;
     transform: translate(${(props) => props.x}px, ${(props) => props.y}px);
+    color: ${(props) => props.color};
   `;
+
   return (
     <BarabaraContainer aria-hidden="true">
-      <BarabaraText x={generateX()} y={generateY()}>
+      <BarabaraText color="#248cd8" x={generateX()} y={generateY()}>
         バ
       </BarabaraText>
-      <BarabaraText x={generateX()} y={generateY()}>
+      <BarabaraText color="#e6412e" x={generateX()} y={generateY()}>
         ラ
       </BarabaraText>
-      <BarabaraText x={generateX()} y={generateY()}>
+      <BarabaraText color="#e37203" x={generateX()} y={generateY()}>
         バ
       </BarabaraText>
-      <BarabaraText x={generateX()} y={generateY()}>
+      <BarabaraText color="#f0bd00" x={generateX()} y={generateY()}>
         ラ
       </BarabaraText>
     </BarabaraContainer>
