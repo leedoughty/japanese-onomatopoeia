@@ -22,6 +22,7 @@ function WordPage({ match }) {
     gurarigurari: WordAnimations.Gurarigurari,
     kurukuru: WordAnimations.Kurukuru,
     barabara: WordAnimations.Barabara,
+    urouro: WordAnimations.Urouro,
   };
 
   const WordAnimation = WordAnimationComponents[match.params.id];

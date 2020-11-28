@@ -53,5 +53,16 @@
         "sentenceMeaning": "The strong wind caused the petals to be scattered"
       }
     ]
+  },
+  {
+    "id": "urouro",
+    "word": "うろうろ",
+    "meaning": "Wandering around",
+    "sentences": [
+      {
+        "sentence": "私はお店の中をうろうろしていた",
+        "sentenceMeaning": "I wandered around in the store"
+      }
+    ]
   }
 ]
