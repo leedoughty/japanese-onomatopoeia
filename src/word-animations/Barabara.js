@@ -16,6 +16,7 @@ function Barabara() {
   }
 
   const BarabaraText = styled.p`
+    top: 20%;
     position: absolute;
     left: ${(props) => props.pos}%;
     font-size: 100px;
