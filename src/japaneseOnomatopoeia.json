@@ -75,5 +75,16 @@
         "sentenceMeaning": "The pillow was very squishy"
       }
     ]
+  },
+  {
+    "id": "kirakira",
+    "word": "きらきら",
+    "meaning": "Sparkling",
+    "sentences": [
+      {
+        "sentence": "星はきらきらと輝いた",
+        "sentenceMeaning": "The stars sparkled"
+      }
+    ]
   }
 ]

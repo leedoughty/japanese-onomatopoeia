@@ -8,6 +8,7 @@ const WordAnimationComponents = {
   barabara: WordAnimations.Barabara,
   urouro: WordAnimations.Urouro,
   gunyagunya: WordAnimations.Gunyagunya,
+  kirakira: WordAnimations.Kirakira,
 };
 
 export default WordAnimationComponents;
