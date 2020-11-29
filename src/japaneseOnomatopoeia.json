@@ -64,5 +64,16 @@
         "sentenceMeaning": "I wandered around in the store"
       }
     ]
+  },
+  {
+    "id": "gunyagunya",
+    "word": "ぐにゃぐにゃ",
+    "meaning": "Squishy",
+    "sentences": [
+      {
+        "sentence": "まくらはとてもぐにゃぐにゃだった",
+        "sentenceMeaning": "The pillow was very squishy"
+      }
+    ]
   }
 ]
