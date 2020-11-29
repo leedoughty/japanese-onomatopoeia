@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import japaneseOnomatopoeia from "./japaneseOnomatopoeia.json";
-import * as WordAnimations from "./word-animations";
+import WordAnimationComponents from "./word-animations/WordAnimationMap";
 import Word from "./Word";
 import Sentence from "./Sentence";
 
@@ -14,15 +14,6 @@ function WordPage({ match }) {
   const loadData = () => {
     const item = JSON.parse(JSON.stringify(japaneseOnomatopoeia));
     setItem(item);
-  };
-
-  const WordAnimationComponents = {
-    dokidoki: WordAnimations.Dokidoki,
-    fuwafuwa: WordAnimations.Fuwafuwa,
-    gurarigurari: WordAnimations.Gurarigurari,
-    kurukuru: WordAnimations.Kurukuru,
-    barabara: WordAnimations.Barabara,
-    urouro: WordAnimations.Urouro,
   };
 
   const WordAnimation = WordAnimationComponents[match.params.id];
