@@ -86,5 +86,16 @@
         "sentenceMeaning": "The stars sparkled"
       }
     ]
+  },
+  {
+    "id": "gorogoro",
+    "word": "ゴロゴロ",
+    "meaning": "Rumbling",
+    "sentences": [
+      {
+        "sentence": "雷がゴロゴロと鳴っている",
+        "sentenceMeaning": "The thunder is rumbling"
+      }
+    ]
   }
 ]
