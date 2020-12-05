@@ -6,6 +6,15 @@ const BarabaraContainer = styled.div`
   height: 50vh;
 `;
 
+const BarabaraText = styled.p`
+  top: 20%;
+  position: absolute;
+  left: ${(props) => props.pos}%;
+  font-size: 100px;
+  transform: translate(${(props) => props.x}px, ${(props) => props.y}px);
+  color: ${(props) => props.color};
+`;
+
 function Barabara() {
   function generateX() {
     return Math.floor(Math.random() * 60);
@@ -14,15 +23,6 @@ function Barabara() {
   function generateY() {
     return Math.floor(Math.random() * 100);
   }
-
-  const BarabaraText = styled.p`
-    top: 20%;
-    position: absolute;
-    left: ${(props) => props.pos}%;
-    font-size: 100px;
-    transform: translate(${(props) => props.x}px, ${(props) => props.y}px);
-    color: ${(props) => props.color};
-  `;
 
   return (
     <BarabaraContainer aria-hidden="true">
