@@ -20,21 +20,26 @@ function WordPage({ match }) {
 
   return (
     <section className="word-page">
-      {item.map((word) => {
-        if (word.id === match.params.id) {
+      {item
+        .filter((item) => item.id === match.params.id)
+        .map((word) => {
           return (
-            <>
-              <Word id={word.id} word={word.word} meaning={word.meaning} />
+            <section className="word-container" key={word.id}>
+              <Word
+                key={word.id}
+                id={word.id}
+                word={word.word}
+                meaning={word.meaning}
+              />
               <WordAnimation />
               <h2 className="sentences-heading">Sentences</h2>
               <Sentence
                 sentence={word.sentences[0].sentence}
                 sentenceMeaning={word.sentences[0].sentenceMeaning}
               />
-            </>
+            </section>
           );
-        }
-      })}
+        })}
     </section>
   );
 }
