@@ -13,6 +13,10 @@ const BarabaraText = styled.p`
   left: ${(props) => props.pos}%;
   font-size: 100px;
   color: ${(props) => props.color};
+  cursor: grab;
+  :active {
+    cursor: grabbing;
+  }
 `;
 
 function Barabara() {
