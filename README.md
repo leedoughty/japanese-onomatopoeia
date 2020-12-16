@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Japanese Onomatopoeia
+
+Onomatopoeia words are used to represent sounds in a language. In Japanese, onomatopoeia play an important role in expressing sound, emotion, movement, feelings, states and much more, and are frequently used in everyday speech and writing.
+
+This app is both a learning tool and a celebration of these wonderful features of the Japanese language. I hope you enjoy!
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
