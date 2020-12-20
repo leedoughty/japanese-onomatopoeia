@@ -19,7 +19,8 @@ function Homepage() {
       {items.map((item) => (
         <li className="homepage-item" key={item.id}>
           <Link className="homepage-link" to={`word/${item.id}`}>
-            {item.word} – {item.meaning}
+            <div className="japanese-word-link">{item.word}</div>
+            <div className="english-word-link">{item.meaning}</div>
           </Link>
         </li>
       ))}
