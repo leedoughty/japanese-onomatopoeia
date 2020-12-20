@@ -97,5 +97,16 @@
         "sentenceMeaning": "The thunder is rumbling"
       }
     ]
+  },
+  {
+    "id": "goshigoshi",
+    "word": "ゴシゴシ",
+    "meaning": "Scrubbing",
+    "sentences": [
+      {
+        "sentence": "この床はごしごしとよく磨く必要がある",
+        "sentenceMeaning": "This floor needs a good scrub"
+      }
+    ]
   }
 ]

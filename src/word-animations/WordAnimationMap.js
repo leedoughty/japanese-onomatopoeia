@@ -10,6 +10,7 @@ const WordAnimationComponents = {
   gunyagunya: WordAnimations.Gunyagunya,
   kirakira: WordAnimations.Kirakira,
   gorogoro: WordAnimations.Gorogoro,
+  goshigoshi: WordAnimations.Goshigoshi,
 };
 
 export default WordAnimationComponents;
