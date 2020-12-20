@@ -108,5 +108,16 @@
         "sentenceMeaning": "This floor needs a good scrub"
       }
     ]
+  },
+  {
+    "id": "dondon",
+    "word": "どんどん",
+    "meaning": "More and more",
+    "sentences": [
+      {
+        "sentence": "毎日、日本語を勉強するとどんどんうまくなるよ",
+        "sentenceMeaning": "If you study Japanese every day, you will get better and better."
+      }
+    ]
   }
 ]
