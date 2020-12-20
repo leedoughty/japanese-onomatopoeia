@@ -119,5 +119,16 @@
         "sentenceMeaning": "If you study Japanese every day, you will get better and better."
       }
     ]
+  },
+  {
+    "id": "wakuwaku",
+    "word": "わくわく",
+    "meaning": "Excited",
+    "sentences": [
+      {
+        "sentence": "私はわくわくしています",
+        "sentenceMeaning": "I am excited!"
+      }
+    ]
   }
 ]

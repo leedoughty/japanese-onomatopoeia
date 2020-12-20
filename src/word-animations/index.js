@@ -9,3 +9,4 @@ export { default as Kirakira } from "./Kirakira";
 export { default as Gorogoro } from "./Gorogoro";
 export { default as Goshigoshi } from "./Goshigoshi";
 export { default as Dondon } from "./Dondon";
+export { default as Wakuwaku } from "./Wakuwaku";

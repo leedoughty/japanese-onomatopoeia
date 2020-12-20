@@ -12,6 +12,7 @@ const WordAnimationComponents = {
   gorogoro: WordAnimations.Gorogoro,
   goshigoshi: WordAnimations.Goshigoshi,
   dondon: WordAnimations.Dondon,
+  wakuwaku: WordAnimations.Wakuwaku,
 };
 
 export default WordAnimationComponents;
