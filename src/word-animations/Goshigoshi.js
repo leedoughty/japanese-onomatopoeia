@@ -74,6 +74,7 @@ function Goshigoshi() {
           position: "absolute",
           margin: "10px 0 10px 0",
           overflow: "hidden",
+          touchAction: "none",
         }}
         onMouseDown={startDrawing}
         onMouseUp={finishDrawing}
