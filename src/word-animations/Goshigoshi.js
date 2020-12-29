@@ -1,4 +1,22 @@
 import React, { useRef, useState, useEffect } from "react";
+import styled from "styled-components";
+
+const GoshigoshiContainer = styled.div`
+  margin: 10px 0 10px 0;
+  width: 90vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const GoshigoshiText = styled.h1`
+  text-align: center;
+  font-size: 100px;
+  @media (max-width: 768px) {
+    font-size: 50px;
+  }
+`;
 
 function Goshigoshi() {
   const canvasRef = useRef(null);
@@ -7,16 +25,17 @@ function Goshigoshi() {
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    canvas.width = window.innerWidth * 2;
-    canvas.height = window.innerHeight * 2;
-    canvas.style.width = `${window.innerWidth}px`;
-    canvas.style.height = `${window.innerHeight}px`;
+    canvas.width = 600;
+    canvas.height = 200;
+    canvas.style.width = `600px`;
+    canvas.style.height = `200px`;
 
     const context = canvas.getContext("2d");
-    context.scale(2, 2);
+    context.fillStyle = "rgb(200,200,200)";
+    context.fillRect(0, 0, 1000, 300);
     context.lineCap = "round";
-    context.strokeStyle = "black";
-    context.lineWidth = 10;
+    context.globalCompositeOperation = "destination-out";
+    context.lineWidth = 40;
     contextRef.current = context;
   }, []);
 
@@ -42,20 +61,20 @@ function Goshigoshi() {
   };
 
   return (
-    <div style={{ border: "1px solid blue", height: "50vh" }}>
-      <h1>ゴシゴシ</h1>
+    <GoshigoshiContainer>
+      <GoshigoshiText>ゴシゴシ</GoshigoshiText>
       <canvas
         style={{
           position: "absolute",
-          top: 0,
-          left: 0,
+          margin: "10px 0 10px 0",
+          overflow: "hidden",
         }}
         onMouseDown={startDrawing}
         onMouseUp={finishDrawing}
         onMouseMove={draw}
         ref={canvasRef}
-      />
-    </div>
+      ></canvas>
+    </GoshigoshiContainer>
   );
 }
 
