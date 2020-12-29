@@ -25,10 +25,10 @@ function Goshigoshi() {
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    canvas.width = 600;
-    canvas.height = 200;
-    canvas.style.width = `600px`;
-    canvas.style.height = `200px`;
+    canvas.style.width = `75%`;
+    canvas.style.height = `30%`;
+    canvas.width = canvas.clientWidth;
+    canvas.height = canvas.clientHeight;
 
     const context = canvas.getContext("2d");
     context.fillStyle = "rgb(200,200,200)";
@@ -42,7 +42,10 @@ function Goshigoshi() {
   const startDrawing = ({ nativeEvent }) => {
     const { offsetX, offsetY } = nativeEvent;
     contextRef.current.beginPath();
-    contextRef.current.moveTo(offsetX, offsetY);
+    contextRef.current.moveTo(
+      offsetX ?? nativeEvent.touches[0].pageX - canvasRef.current.offsetLeft,
+      offsetY ?? nativeEvent.touches[0].pageY - canvasRef.current.offsetTop
+    );
     setIsDrawing(true);
   };
 
@@ -56,7 +59,10 @@ function Goshigoshi() {
       return;
     }
     const { offsetX, offsetY } = nativeEvent;
-    contextRef.current.lineTo(offsetX, offsetY);
+    contextRef.current.lineTo(
+      offsetX ?? nativeEvent.touches[0].pageX - canvasRef.current.offsetLeft,
+      offsetY ?? nativeEvent.touches[0].pageY - canvasRef.current.offsetTop
+    );
     contextRef.current.stroke();
   };
 
@@ -72,6 +78,9 @@ function Goshigoshi() {
         onMouseDown={startDrawing}
         onMouseUp={finishDrawing}
         onMouseMove={draw}
+        onTouchStart={startDrawing}
+        onTouchEnd={finishDrawing}
+        onTouchMove={draw}
         ref={canvasRef}
       ></canvas>
     </GoshigoshiContainer>
