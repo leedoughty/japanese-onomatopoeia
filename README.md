@@ -6,6 +6,10 @@ Onomatopoeia words are used to represent sounds in a language. In Japanese, onom
 
 This app is both a learning tool and a celebration of these wonderful features of the Japanese language. I hope you enjoy!
 
+### Sources
+
+https://ejje.weblio.jp
+
 ## Setup
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
