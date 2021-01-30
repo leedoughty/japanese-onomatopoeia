@@ -22,8 +22,8 @@ function Urouro() {
   let secondUro = useRef(null);
 
   useEffect(() => {
-    TweenMax.from(firstUro, 0.8, { opacity: 0, x: 40, ease: Power3.easeOut });
-    TweenMax.from(secondUro, 0.8, { opacity: 0, x: 40, ease: Power3.easeOut });
+    TweenMax.fromTo(firstUro, 1, { x: -200, y: 100 }, { x: 200, y: 200 });
+    TweenMax.fromTo(secondUro, 1, { x: 0, y: 400 }, { x: 200, y: 0 });
   }, []);
 
   return (
