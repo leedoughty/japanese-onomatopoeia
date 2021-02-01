@@ -6,7 +6,7 @@ const UrouroContainer = styled.div`
   margin: 10px 0 10px 0;
   background-color: #2f2f2f;
   width: 90vw;
-  height: 70vh;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,15 +15,32 @@ const UrouroContainer = styled.div`
 const UrouroText = styled.p`
   font-size: 80px;
   color: #fdfdfd;
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
 `;
 
 function Urouro() {
   let firstUro = useRef(null);
   let secondUro = useRef(null);
 
+  function generateRandomLocation() {
+    return Math.floor(Math.random() * 201) - 100;
+  }
+
   useEffect(() => {
-    TweenMax.fromTo(firstUro, 1, { x: -200, y: 100 }, { x: 200, y: 200 });
-    TweenMax.fromTo(secondUro, 1, { x: 0, y: 400 }, { x: 200, y: 0 });
+    TweenMax.fromTo(
+      firstUro,
+      1,
+      { x: 0, y: 0 },
+      { x: generateRandomLocation(), y: generateRandomLocation() }
+    );
+    TweenMax.fromTo(
+      secondUro,
+      1,
+      { x: 0, y: 0 },
+      { x: generateRandomLocation(), y: generateRandomLocation() }
+    );
   }, []);
 
   return (
