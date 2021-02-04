@@ -9,7 +9,11 @@ function About() {
       </p>
       <p className="about-text">
         This app is both a learning tool and a celebration of these wonderful
-        features of the Japanese language. I hope you enjoy!
+        features of the Japanese language. Feel free to check out{" "}
+        <a href="https://github.com/leedoughty/japanese-onomatopoeia">
+          the code
+        </a>
+        . I hope you enjoy!
       </p>
     </div>
   );
