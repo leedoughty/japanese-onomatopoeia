@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import styled, { keyframes } from "styled-components";
-import { TweenMax, Power3 } from "gsap";
+import styled from "styled-components";
+import { TweenMax } from "gsap";
 
 const UrouroContainer = styled.div`
   margin: 10px 0 10px 0;

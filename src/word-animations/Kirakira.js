@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 const KirakiraContainer = styled.div`
   margin: 10px 0 10px 0;
