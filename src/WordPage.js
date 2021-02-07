@@ -33,10 +33,15 @@ function WordPage({ match }) {
               />
               <WordAnimation />
               <h2 className="sentences-heading">Sentences</h2>
-              <Sentence
-                sentence={word.sentences[0].sentence}
-                sentenceMeaning={word.sentences[0].sentenceMeaning}
-              />
+              {word.sentences.map((sentence) => {
+                return (
+                  <Sentence
+                    key={sentence.sentence}
+                    sentence={sentence.sentence}
+                    sentenceMeaning={sentence.sentenceMeaning}
+                  />
+                );
+              })}
             </section>
           );
         })}
