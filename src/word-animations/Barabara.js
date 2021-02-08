@@ -5,6 +5,7 @@ const BarabaraContainer = styled.div`
   margin: 10px 0 10px 0;
   width: 90vw;
   height: 50vh;
+  background-color: rgb(245, 243, 240);
 `;
 
 const BarabaraText = styled.p`
