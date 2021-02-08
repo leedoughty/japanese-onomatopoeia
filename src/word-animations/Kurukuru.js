@@ -11,7 +11,7 @@ const Spin = keyframes`
 
 const SpinningAnimation = styled.p`
   font-size: 80px;
-  animation: ${Spin} 1s linear infinite;
+  animation: ${Spin} 3s linear infinite;
   color: #fdfdfd;
 `;
 
@@ -28,7 +28,10 @@ const KurukuruContainer = styled.div`
 function Kurukuru() {
   return (
     <KurukuruContainer>
-      <SpinningAnimation>くるくる</SpinningAnimation>
+      <SpinningAnimation>く</SpinningAnimation>
+      <SpinningAnimation>る</SpinningAnimation>
+      <SpinningAnimation>く</SpinningAnimation>
+      <SpinningAnimation>る</SpinningAnimation>
     </KurukuruContainer>
   );
 }
