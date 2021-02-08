@@ -9,6 +9,7 @@ const Floating = keyframes`
 const FloatingAnimation = styled.p`
   animation: ${Floating} 1.5s linear infinite;
   font-size: 80px;
+  color: white;
   @media (prefers-reduced-motion: reduce) {
     animation: ${Floating} 0.5s ease-in infinite;
   }
@@ -21,6 +22,7 @@ const FuwafuwaContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgb(200, 200, 200);
 `;
 
 function Fuwafuwa() {
