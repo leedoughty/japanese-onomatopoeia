@@ -9,6 +9,7 @@ This app is both a learning tool and a celebration of these wonderful features o
 ### Sources
 
 https://ejje.weblio.jp
+https://dictionary.goo.ne.jp
 
 ## Setup
 
