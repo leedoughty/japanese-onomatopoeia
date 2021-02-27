@@ -1,10 +1,11 @@
 import React, { useRef, useState, useEffect } from "react";
 import styled from "styled-components";
+import NavBar from "../NavBar";
 
 const GoshigoshiContainer = styled.div`
   margin: 10px 0 10px 0;
-  width: 90vw;
-  height: 50vh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,24 +68,27 @@ function Goshigoshi() {
   };
 
   return (
-    <GoshigoshiContainer>
-      <GoshigoshiText>ゴシゴシ</GoshigoshiText>
-      <canvas
-        style={{
-          position: "absolute",
-          margin: "10px 0 10px 0",
-          overflow: "hidden",
-          touchAction: "none",
-        }}
-        onMouseDown={startDrawing}
-        onMouseUp={finishDrawing}
-        onMouseMove={draw}
-        onTouchStart={startDrawing}
-        onTouchEnd={finishDrawing}
-        onTouchMove={draw}
-        ref={canvasRef}
-      ></canvas>
-    </GoshigoshiContainer>
+    <>
+      <NavBar navBarColour="black" />
+      <GoshigoshiContainer>
+        <GoshigoshiText>ゴシゴシ</GoshigoshiText>
+        <canvas
+          style={{
+            position: "absolute",
+            margin: "10px 0 10px 0",
+            overflow: "hidden",
+            touchAction: "none",
+          }}
+          onMouseDown={startDrawing}
+          onMouseUp={finishDrawing}
+          onMouseMove={draw}
+          onTouchStart={startDrawing}
+          onTouchEnd={finishDrawing}
+          onTouchMove={draw}
+          ref={canvasRef}
+        ></canvas>
+      </GoshigoshiContainer>
+    </>
   );
 }
 

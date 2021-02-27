@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import WordAnimationBackground from "./WordAnimationBackground";
 
 const Floating = keyframes`
   50% {
@@ -16,20 +17,23 @@ const FloatingAnimation = styled.p`
 `;
 
 const FuwafuwaContainer = styled.div`
-  margin: 10px 0 10px 0;
-  width: 90vw;
-  height: 50vh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(200, 200, 200);
 `;
 
 function Fuwafuwa() {
   return (
-    <FuwafuwaContainer>
-      <FloatingAnimation>ふわふわ</FloatingAnimation>
-    </FuwafuwaContainer>
+    <WordAnimationBackground
+      backgroundColour="rgb(200, 200, 200)"
+      navBarColour="white"
+    >
+      <FuwafuwaContainer>
+        <FloatingAnimation>ふわふわ</FloatingAnimation>
+      </FuwafuwaContainer>
+    </WordAnimationBackground>
   );
 }
 

@@ -25,13 +25,13 @@ function WordPage({ match }) {
         .map((word) => {
           return (
             <section className="word-container" key={word.id}>
+              <WordAnimation />
               <Word
                 key={word.id}
                 id={word.id}
                 word={word.word}
                 meaning={word.meaning}
               />
-              <WordAnimation />
               <h2 className="sentences-heading">Sentences</h2>
               {word.sentences.map((sentence) => {
                 return (

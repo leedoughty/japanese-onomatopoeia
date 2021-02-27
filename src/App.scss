@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: rgb(245, 243, 239);
 }
 
 .app {
@@ -18,6 +19,7 @@ body {
   width: 90vw;
   margin: auto;
   padding: 10px 0 20px 0;
+  padding-top: 100px;
   max-width: 1200px;
   display: grid;
   grid-auto-rows: 100px;
@@ -61,12 +63,13 @@ nav {
   display: flex;
   justify-content: space-between;
   width: 90vw;
-  margin: auto;
+  margin: 0 5vw 0 5vw;
   align-items: center;
   height: 10vh;
+  position: absolute;
 
   .nav-link {
-    color: $black;
+    padding: 0;
     font-size: 20px;
     text-decoration: none;
     &:hover {
@@ -81,10 +84,6 @@ nav {
 }
 
 .word-page {
-  padding-top: 10px;
-  width: 90vw;
-  margin: auto;
-
   .japanese-word {
     font-weight: 600;
     font-size: $font-size-medium;
@@ -124,6 +123,7 @@ nav {
 }
 
 .about-container {
+  padding-top: 100px;
   width: 90vw;
   margin: auto;
 
