@@ -3,7 +3,6 @@ import styled from "styled-components";
 import NavBar from "../NavBar";
 
 const GoshigoshiContainer = styled.div`
-  margin: 10px 0 10px 0;
   width: 100vw;
   height: 100vh;
   display: flex;
