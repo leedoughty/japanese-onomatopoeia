@@ -1,14 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import WordAnimationBackground from "./WordAnimationBackground";
-
-const KirakiraContainer = styled.div`
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+import WordAnimationContainer from "./WordAnimationContainer";
 
 const KirakiraText = styled.h1`
   font-size: 60px;
@@ -25,10 +18,10 @@ const Sparkles = styled.span`
 function Kirakira() {
   return (
     <WordAnimationBackground navBarColour="black">
-      <KirakiraContainer>
+      <WordAnimationContainer>
         <KirakiraText>きらきら</KirakiraText>
         <Sparkles aria-hidden="true">✧･ﾟ: *✧･ﾟ:*:･ﾟ✧*:･ﾟ✧･ﾟ:</Sparkles>
-      </KirakiraContainer>
+      </WordAnimationContainer>
     </WordAnimationBackground>
   );
 }

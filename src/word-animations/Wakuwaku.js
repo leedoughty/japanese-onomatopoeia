@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import WordAnimationBackground from "./WordAnimationBackground";
+import WordAnimationContainer from "./WordAnimationContainer";
 
 const WakuwakuAnimation = keyframes`
   0% {
@@ -12,14 +13,6 @@ const WakuwakuAnimation = keyframes`
   100% {
     transform: scale(1);
   }
-`;
-
-const WakuwakuContainer = styled.div`
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;
 
 const WakuwakuText = styled.h1`
@@ -36,12 +29,12 @@ const WakuwakuText = styled.h1`
 function Wakuwaku() {
   return (
     <WordAnimationBackground navBarColour="rgb(230, 65, 46)">
-      <WakuwakuContainer>
+      <WordAnimationContainer>
         <WakuwakuText colour="rgb(230, 65, 46)">わ</WakuwakuText>
         <WakuwakuText colour="rgb(240, 189, 0)">く</WakuwakuText>
         <WakuwakuText colour="rgb(29, 200, 97)">わ</WakuwakuText>
         <WakuwakuText colour="rgb(37, 140, 216)">く</WakuwakuText>
-      </WakuwakuContainer>
+      </WordAnimationContainer>
     </WordAnimationBackground>
   );
 }

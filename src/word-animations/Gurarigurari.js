@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import WordAnimationBackground from "./WordAnimationBackground";
+import WordAnimationContainer from "./WordAnimationContainer";
 
 const Shaking = keyframes`
   0% { transform: translate(2px, 1px) rotate(0deg); }
@@ -27,20 +28,12 @@ const ShakingAnimation = styled.h1`
   }
 `;
 
-const GurarigurariContainer = styled.div`
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
 function Gurarigurari() {
   return (
     <WordAnimationBackground backgroundColour="#2f2f2f" navBarColour="white">
-      <GurarigurariContainer>
+      <WordAnimationContainer>
         <ShakingAnimation>ぐらりぐらり</ShakingAnimation>
-      </GurarigurariContainer>
+      </WordAnimationContainer>
     </WordAnimationBackground>
   );
 }

@@ -1,14 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import styled from "styled-components";
 import NavBar from "../NavBar";
-
-const GoshigoshiContainer = styled.div`
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+import WordAnimationContainer from "./WordAnimationContainer";
 
 const GoshigoshiText = styled.h1`
   text-align: center;
@@ -69,7 +62,7 @@ function Goshigoshi() {
   return (
     <>
       <NavBar navBarColour="black" />
-      <GoshigoshiContainer>
+      <WordAnimationContainer>
         <GoshigoshiText>ゴシゴシ</GoshigoshiText>
         <canvas
           style={{
@@ -86,7 +79,7 @@ function Goshigoshi() {
           onTouchMove={draw}
           ref={canvasRef}
         ></canvas>
-      </GoshigoshiContainer>
+      </WordAnimationContainer>
     </>
   );
 }

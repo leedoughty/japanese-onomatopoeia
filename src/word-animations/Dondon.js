@@ -1,14 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import WordAnimationBackground from "./WordAnimationBackground";
-
-const DondonContainer = styled.div`
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+import WordAnimationContainer from "./WordAnimationContainer";
 
 const DondonText = styled.p`
   font-size: 80px;
@@ -20,12 +13,12 @@ const DondonText = styled.p`
 function Dondon() {
   return (
     <WordAnimationBackground navBarColour="black">
-      <DondonContainer>
+      <WordAnimationContainer>
         <DondonText>ドンドン</DondonText>
         <DondonText>ドンドン</DondonText>
         <DondonText>ドンドン</DondonText>
         <DondonText>ドンドン</DondonText>
-      </DondonContainer>
+      </WordAnimationContainer>
     </WordAnimationBackground>
   );
 }

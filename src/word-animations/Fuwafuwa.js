@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import WordAnimationBackground from "./WordAnimationBackground";
+import WordAnimationContainer from "./WordAnimationContainer";
 
 const Floating = keyframes`
   50% {
@@ -16,23 +17,15 @@ const FloatingAnimation = styled.p`
   }
 `;
 
-const FuwafuwaContainer = styled.div`
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
 function Fuwafuwa() {
   return (
     <WordAnimationBackground
       backgroundColour="rgb(200, 200, 200)"
       navBarColour="white"
     >
-      <FuwafuwaContainer>
+      <WordAnimationContainer>
         <FloatingAnimation>ふわふわ</FloatingAnimation>
-      </FuwafuwaContainer>
+      </WordAnimationContainer>
     </WordAnimationBackground>
   );
 }

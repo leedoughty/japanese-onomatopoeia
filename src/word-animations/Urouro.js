@@ -2,14 +2,7 @@ import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import { TweenMax } from "gsap";
 import WordAnimationBackground from "./WordAnimationBackground";
-
-const UrouroContainer = styled.div`
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+import WordAnimationContainer from "./WordAnimationContainer";
 
 const UrouroText = styled.p`
   font-size: 80px;
@@ -44,10 +37,10 @@ function Urouro() {
 
   return (
     <WordAnimationBackground backgroundColour="#2f2f2f" navBarColour="white">
-      <UrouroContainer>
+      <WordAnimationContainer>
         <UrouroText ref={(el) => (firstUro = el)}>うろ</UrouroText>
         <UrouroText ref={(el) => (secondUro = el)}>うろ</UrouroText>
-      </UrouroContainer>
+      </WordAnimationContainer>
     </WordAnimationBackground>
   );
 }
