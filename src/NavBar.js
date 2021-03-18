@@ -1,13 +1,23 @@
 import { Link } from "react-router-dom";
+import styled from "styled-components";
 
-function NavBar() {
+function NavBar({ ...props }) {
+  const NavLink = styled.h1`
+    color: ${props.navBarColour};
+    font-size: 20px;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  `;
+
   return (
     <nav>
       <Link aria-label="home" className="nav-link" to="/">
-        <h1 className="nav-item">onomato</h1>
+        <NavLink>onomato</NavLink>
       </Link>
       <Link aria-label="about" className="nav-link" to="/about">
-        <h1 className="nav-item">about</h1>
+        <NavLink>about</NavLink>
       </Link>
     </nav>
   );

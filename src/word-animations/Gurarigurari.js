@@ -1,4 +1,6 @@
 import styled, { keyframes } from "styled-components";
+import WordAnimationBackground from "./WordAnimationBackground";
+import WordAnimationContainer from "./WordAnimationContainer";
 
 const Shaking = keyframes`
   0% { transform: translate(2px, 1px) rotate(0deg); }
@@ -26,21 +28,13 @@ const ShakingAnimation = styled.h1`
   }
 `;
 
-const GurarigurariContainer = styled.div`
-  margin: 10px 0 10px 0;
-  background-color: #2f2f2f;
-  width: 90vw;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
 function Gurarigurari() {
   return (
-    <GurarigurariContainer>
-      <ShakingAnimation>ぐらりぐらり</ShakingAnimation>
-    </GurarigurariContainer>
+    <WordAnimationBackground backgroundColour="#2f2f2f" navBarColour="white">
+      <WordAnimationContainer>
+        <ShakingAnimation>ぐらりぐらり</ShakingAnimation>
+      </WordAnimationContainer>
+    </WordAnimationBackground>
   );
 }
 

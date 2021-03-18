@@ -1,4 +1,6 @@
 import styled, { keyframes } from "styled-components";
+import WordAnimationBackground from "./WordAnimationBackground";
+import WordAnimationContainer from "./WordAnimationContainer";
 
 const Heartbeat = keyframes`
   0% {
@@ -19,22 +21,13 @@ const HeartbeatAnimation = styled.p`
   color: white;
 `;
 
-const DokidokiContainer = styled.div`
-  margin: 10px 0 10px 0;
-  border: 1px solid red;
-  background-color: #e74c3c;
-  width: 90vw;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
 function Dokidoki() {
   return (
-    <DokidokiContainer>
-      <HeartbeatAnimation>ドキドキ</HeartbeatAnimation>
-    </DokidokiContainer>
+    <WordAnimationBackground backgroundColour="#e74c3c" navBarColour="white">
+      <WordAnimationContainer>
+        <HeartbeatAnimation>ドキドキ</HeartbeatAnimation>
+      </WordAnimationContainer>
+    </WordAnimationBackground>
   );
 }
 

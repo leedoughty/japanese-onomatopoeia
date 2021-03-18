@@ -1,4 +1,6 @@
 import styled, { keyframes } from "styled-components";
+import WordAnimationBackground from "./WordAnimationBackground";
+import WordAnimationContainer from "./WordAnimationContainer";
 
 const Spin = keyframes`
   0% {
@@ -15,24 +17,16 @@ const SpinningAnimation = styled.p`
   color: #fdfdfd;
 `;
 
-const KurukuruContainer = styled.div`
-  margin: 10px 0 10px 0;
-  background-color: #2f2f2f;
-  width: 90vw;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
 function Kurukuru() {
   return (
-    <KurukuruContainer>
-      <SpinningAnimation>く</SpinningAnimation>
-      <SpinningAnimation>る</SpinningAnimation>
-      <SpinningAnimation>く</SpinningAnimation>
-      <SpinningAnimation>る</SpinningAnimation>
-    </KurukuruContainer>
+    <WordAnimationBackground backgroundColour="#2f2f2f" navBarColour="white">
+      <WordAnimationContainer>
+        <SpinningAnimation>く</SpinningAnimation>
+        <SpinningAnimation>る</SpinningAnimation>
+        <SpinningAnimation>く</SpinningAnimation>
+        <SpinningAnimation>る</SpinningAnimation>
+      </WordAnimationContainer>
+    </WordAnimationBackground>
   );
 }
 

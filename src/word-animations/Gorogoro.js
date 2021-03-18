@@ -1,15 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-
-const GorogoroContainer = styled.div`
-  margin: 10px 0 10px 0;
-  background-color: #2f2f2f;
-  width: 90vw;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+import WordAnimationBackground from "./WordAnimationBackground";
+import WordAnimationContainer from "./WordAnimationContainer";
 
 const GorogoroMovement = keyframes`
   0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -33,12 +25,14 @@ const GorogoroAnimation = styled.h1`
 
 function Gorogoro() {
   return (
-    <GorogoroContainer>
-      <GorogoroAnimation>ゴ</GorogoroAnimation>
-      <GorogoroAnimation>ロ</GorogoroAnimation>
-      <GorogoroAnimation>ゴ</GorogoroAnimation>
-      <GorogoroAnimation>ロ</GorogoroAnimation>
-    </GorogoroContainer>
+    <WordAnimationBackground backgroundColour="#2f2f2f" navBarColour="white">
+      <WordAnimationContainer>
+        <GorogoroAnimation>ゴ</GorogoroAnimation>
+        <GorogoroAnimation>ロ</GorogoroAnimation>
+        <GorogoroAnimation>ゴ</GorogoroAnimation>
+        <GorogoroAnimation>ロ</GorogoroAnimation>
+      </WordAnimationContainer>
+    </WordAnimationBackground>
   );
 }
 

@@ -1,16 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import GunyagunyaText from "./images/squishy.svg";
-
-const GunyagunyaContainer = styled.div`
-  margin: 10px 0 10px 0;
-  background-color: #f1c410;
-  width: 90vw;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+import WordAnimationBackground from "./WordAnimationBackground";
+import WordAnimationContainer from "./WordAnimationContainer";
 
 const GunyagunyaImage = styled.img`
   width: 400px;
@@ -19,9 +11,11 @@ const GunyagunyaImage = styled.img`
 
 function Gunyagunya() {
   return (
-    <GunyagunyaContainer>
-      <GunyagunyaImage src={GunyagunyaText} alt="Squishy" />
-    </GunyagunyaContainer>
+    <WordAnimationBackground backgroundColour="#f1c410" navBarColour="white">
+      <WordAnimationContainer>
+        <GunyagunyaImage src={GunyagunyaText} alt="Squishy" />
+      </WordAnimationContainer>
+    </WordAnimationBackground>
   );
 }
 

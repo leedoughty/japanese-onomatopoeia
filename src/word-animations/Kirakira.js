@@ -1,31 +1,28 @@
 import React from "react";
 import styled from "styled-components";
-
-const KirakiraContainer = styled.div`
-  margin: 10px 0 10px 0;
-  width: 90vw;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+import WordAnimationBackground from "./WordAnimationBackground";
+import WordAnimationContainer from "./WordAnimationContainer";
 
 const KirakiraText = styled.h1`
   font-size: 60px;
 `;
 
 const Sparkles = styled.span`
-  font-size: 50px;
+  font-size: 100px;
+  width: 50%;
+  text-align: center;
   position: absolute;
   color: #ffc600;
 `;
 
 function Kirakira() {
   return (
-    <KirakiraContainer>
-      <KirakiraText>きらきら</KirakiraText>
-      <Sparkles aria-hidden="true">✧･ﾟ: *✧･ﾟ:*:･ﾟ✧*:･ﾟ✧･ﾟ:</Sparkles>
-    </KirakiraContainer>
+    <WordAnimationBackground navBarColour="black">
+      <WordAnimationContainer>
+        <KirakiraText>きらきら</KirakiraText>
+        <Sparkles aria-hidden="true">✧･ﾟ: *✧･ﾟ:*:･ﾟ✧*:･ﾟ✧･ﾟ:</Sparkles>
+      </WordAnimationContainer>
+    </WordAnimationBackground>
   );
 }
 
