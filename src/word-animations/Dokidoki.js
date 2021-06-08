@@ -15,6 +15,7 @@ const Heartbeat = keyframes`
 `;
 
 const HeartbeatAnimation = styled.p`
+  font-family: "Hiragino Kaku Gothic Pro W6", Helvetica, sans-serif;
   text-align: center;
   animation: ${Heartbeat} 0.4s ease infinite;
   font-size: 50px;
