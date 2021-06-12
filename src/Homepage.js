@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import _ from "lodash";
 import japaneseOnomatopoeia from "./japaneseOnomatopoeia.json";
 import NavBar from "./NavBar";
 
@@ -12,7 +13,7 @@ function Homepage() {
 
   const loadData = () => {
     const items = JSON.parse(JSON.stringify(japaneseOnomatopoeia));
-    setItems(items);
+    setItems(_.shuffle(items));
   };
 
   return (
