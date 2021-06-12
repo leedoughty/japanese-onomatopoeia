@@ -11,6 +11,14 @@
       {
         "sentence": "私の心臓は興奮でどきどきしていた",
         "sentenceMeaning": "My heart was pounding with excitement"
+      },
+      {
+        "sentence": "彼女に会った時、胸がどきどきした",
+        "sentenceMeaning": "I felt my heart beating when I met her"
+      },
+      {
+        "sentence": "ドキドキして待ちきれない",
+        "sentenceMeaning": "I’m excited and can’t wait!"
       }
     ]
   },
@@ -21,7 +29,15 @@
     "sentences": [
       {
         "sentence": "木の葉が庭でくるくると舞っていた",
-        "sentenceMeaning": "The leaves whirled in the yard."
+        "sentenceMeaning": "The leaves whirled in the yard"
+      },
+      {
+        "sentence": "彼はくるくる気が変わる",
+        "sentenceMeaning": "He's always changing his mind"
+      },
+      {
+        "sentence": "部屋がくるくると回っていた",
+        "sentenceMeaning": "The room span around me"
       }
     ]
   },
@@ -44,6 +60,10 @@
       {
         "sentence": "デザートにはふわふわのスフレを食べた",
         "sentenceMeaning": "I enjoyed a light souffle for dessert"
+      },
+      {
+        "sentence": "枕をふわふわにしてあげるね",
+        "sentenceMeaning": "I'll fluff up the pillows for you"
       }
     ]
   },
@@ -55,6 +75,10 @@
       {
         "sentence": "強い風のせい、花びらはバラバラになりました",
         "sentenceMeaning": "The strong wind caused the petals to be scattered"
+      },
+      {
+        "sentence": "ビーズが入った箱落としたら、ビーズがバラバラに散らばっちゃった！",
+        "sentenceMeaning": "I dropped a box of beads and they were scattered everywhere!"
       }
     ]
   },
@@ -66,6 +90,10 @@
       {
         "sentence": "私はお店の中をうろうろしていた",
         "sentenceMeaning": "I wandered around in the store"
+      },
+      {
+        "sentence": "友達が来るまでは暇だったので、駅の周りをうろうろしていました",
+        "sentenceMeaning": "I had some spare time before my friend arrived, so I wandered around the station"
       }
     ]
   },
@@ -88,6 +116,10 @@
       {
         "sentence": "星はきらきらと輝いた",
         "sentenceMeaning": "The stars sparkled"
+      },
+      {
+        "sentence": "湖は月光できらきらしていた",
+        "sentenceMeaning": "The lake sparkled in the moonlight"
       }
     ]
   },
@@ -99,6 +131,10 @@
       {
         "sentence": "雷がゴロゴロと鳴っている",
         "sentenceMeaning": "The thunder is rumbling"
+      },
+      {
+        "sentence": "猫は幸せなときにゴロゴロと喉を鳴らす",
+        "sentenceMeaning": "Cats purr when they are happy"
       }
     ]
   },
@@ -132,6 +168,10 @@
       {
         "sentence": "私はわくわくしています",
         "sentenceMeaning": "I am excited!"
+      },
+      {
+        "sentence": "みんなでクラブ行くなんてめっちゃわくわくするね！",
+        "sentenceMeaning": "I am really excited that we're going to the club!"
       }
     ]
   }
