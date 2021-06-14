@@ -185,5 +185,16 @@
         "sentenceMeaning": "I like the clickety-clack sound of a keyboard"
       }
     ]
+  },
+  {
+    "id": "pakupaku",
+    "word": "ぱくぱく",
+    "meaning": "Devouring",
+    "sentences": [
+      {
+        "sentence": "弁当をぱくぱく食べた",
+        "sentenceMeaning": "They devoured their lunch"
+      }
+    ]
   }
 ]
