@@ -196,5 +196,20 @@
         "sentenceMeaning": "They devoured their lunch"
       }
     ]
+  },
+  {
+    "id": "dandan",
+    "word": "だんだん",
+    "meaning": "Step by step",
+    "sentences": [
+      {
+        "sentence": "だんだん涼しくなりました",
+        "sentenceMeaning": "It got cooler little by little"
+      },
+      {
+        "sentence": "私の気持ちはだんだん変わりました",
+        "sentenceMeaning": "My feelings have steadily changed"
+      }
+    ]
   }
 ]

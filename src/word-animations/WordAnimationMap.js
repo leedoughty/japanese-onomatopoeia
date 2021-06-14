@@ -15,6 +15,7 @@ const WordAnimationComponents = {
   wakuwaku: WordAnimations.Wakuwaku,
   katakata: WordAnimations.Katakata,
   pakupaku: WordAnimations.Pakupaku,
+  dandan: WordAnimations.Dandan,
 };
 
 export default WordAnimationComponents;

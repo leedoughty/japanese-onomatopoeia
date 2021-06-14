@@ -12,3 +12,4 @@ export { default as Dondon } from "./Dondon";
 export { default as Wakuwaku } from "./Wakuwaku";
 export { default as Katakata } from "./Katakata";
 export { default as Pakupaku } from "./Pakupaku";
+export { default as Dandan } from "./Dandan";
