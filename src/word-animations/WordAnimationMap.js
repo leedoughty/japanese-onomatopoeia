@@ -13,6 +13,7 @@ const WordAnimationComponents = {
   goshigoshi: WordAnimations.Goshigoshi,
   dondon: WordAnimations.Dondon,
   wakuwaku: WordAnimations.Wakuwaku,
+  katakata: WordAnimations.Katakata,
 };
 
 export default WordAnimationComponents;

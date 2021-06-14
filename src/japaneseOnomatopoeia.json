@@ -174,5 +174,16 @@
         "sentenceMeaning": "I am really excited that we're going to the club!"
       }
     ]
+  },
+  {
+    "id": "katakata",
+    "word": "カタカタ",
+    "meaning": "Clickety‐clack",
+    "sentences": [
+      {
+        "sentence": "キーボードのカタカタ音が好きでね〜",
+        "sentenceMeaning": "I like the clickety-clack sound of a keyboard"
+      }
+    ]
   }
 ]
