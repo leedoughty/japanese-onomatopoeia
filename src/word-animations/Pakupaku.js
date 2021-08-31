@@ -1,14 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import WordAnimationBackground from "./WordAnimationBackground";
-import WordAnimationContainer from "./WordAnimationContainer";
-
-const PakupakuText = styled.p`
-  font-size: 80px;
-  @media (max-width: 768px) {
-    font-size: 40px;
-  }
-`;
 
 const Container = styled.div`
   position: absolute;
@@ -72,8 +64,8 @@ const Food = styled.div`
     width: 20px;
     top: -10px;
     left: 200px;
-    border-radius: 50%;
-    background: #f1c410;
+    color: #f1c410;
+    font-size: 20px;
     animation: movefood 2s linear infinite;
   }
 
@@ -90,29 +82,29 @@ const Food = styled.div`
     animation-delay: 0s;
   }
   div:nth-child(2) {
-    animation-delay: 0.66s;
+    animation-delay: 0.5s;
   }
   div:nth-child(3) {
-    animation-delay: 1.33s;
+    animation-delay: 1s;
   }
   div:nth-child(4) {
-    animation-delay: 2s;
+    animation-delay: 1.5s;
   }
 `;
 
 function Pakupaku() {
   return (
     <WordAnimationBackground backgroundColour="#2f2f2f" navBarColour="white">
-      <Container>
+      <Container aria-hidden="true">
         <Mouth>
           <One></One>
           <Two></Two>
         </Mouth>
         <Food>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div>パ</div>
+          <div>ク</div>
+          <div>パ</div>
+          <div>ク</div>
         </Food>
       </Container>
     </WordAnimationBackground>
