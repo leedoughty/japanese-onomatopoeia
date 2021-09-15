@@ -3,7 +3,7 @@ import * as WordAnimations from "./index.js";
 const WordAnimationComponents = {
   dokidoki: WordAnimations.Dokidoki,
   fuwafuwa: WordAnimations.Fuwafuwa,
-  gurarigurari: WordAnimations.Gurarigurari,
+  guragura: WordAnimations.Guragura,
   kurukuru: WordAnimations.Kurukuru,
   barabara: WordAnimations.Barabara,
   urouro: WordAnimations.Urouro,

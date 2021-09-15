@@ -28,14 +28,14 @@ const ShakingAnimation = styled.h1`
   }
 `;
 
-function Gurarigurari() {
+function Guragura() {
   return (
     <WordAnimationBackground backgroundColour="#2f2f2f" navBarColour="white">
       <WordAnimationContainer>
-        <ShakingAnimation>ぐらりぐらり</ShakingAnimation>
+        <ShakingAnimation>ぐらぐら</ShakingAnimation>
       </WordAnimationContainer>
     </WordAnimationBackground>
   );
 }
 
-export default Gurarigurari;
+export default Guragura;
